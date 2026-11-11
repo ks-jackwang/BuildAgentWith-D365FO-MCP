@@ -1,0 +1,50 @@
+site_name: Dynamics 365 FO 實作 Lab
+site_description: 用 Microsoft Copilot Studio 與 Dynamics 365 ERP MCP 查詢並核對沙箱客戶資料。
+site_url: !ENV MKDOCS_SITE_URL
+
+theme:
+  name: material
+  language: zh-TW
+  custom_dir: overrides
+  font: false
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  icon:
+    logo: material/book-open-variant
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.footer
+
+plugins:
+  - search:
+      lang: [en, ja]
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/lab.css
+
+nav:
+  - 工作坊總覽: index.md
+  - 實作步驟:
+      - 01 準備環境與測試資料: lab/01-environment.md
+      - 02 啟用 ERP MCP: lab/02-enable-mcp.md
+      - 03 建立並連接代理: lab/03-connect-agent.md
+      - 04 設定查詢指示: lab/04-instructions.md
+      - 05 測試並核對結果: lab/05-verify.md
+  - 常見問題: troubleshooting.md
+  - 來源與授權: sources.md
+
+validation:
+  links:
+    not_found: warn
+    anchors: warn

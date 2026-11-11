@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page and page.meta and page.meta.lab_step and page.parent %}
+    {% for lesson in page.parent.children if lesson.is_page %}
+      {% if lesson.url == page.url %}
+        <div class="lab-progress">
+          <label for="lab-progress">第 {{ loop.index }} 關，共 {{ loop.length }} 關</label>
+          <progress id="lab-progress" value="{{ loop.index }}" max="{{ loop.length }}"></progress>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {{ super() }}
+{% endblock %}

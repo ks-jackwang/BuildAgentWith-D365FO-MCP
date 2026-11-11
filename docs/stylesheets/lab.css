@@ -1,0 +1,142 @@
+:root {
+  --md-text-font: Inter, system-ui, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, monospace;
+  --md-primary-fg-color: #133831;
+  --md-primary-bg-color: #fff;
+  --md-accent-fg-color: #146f57;
+  --md-typeset-a-color: #146f57;
+  --lab-ink: #122e28;
+  --lab-muted: #48605a;
+  --lab-border: #dce8e2;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--lab-ink);
+  font-weight: 720;
+}
+
+.md-typeset .lab-hero {
+  padding: clamp(1.3rem, 4vw, 2.5rem);
+  border-radius: 1.15rem;
+  background:
+    radial-gradient(ellipse at 95% 12%, #2c6853, transparent 64%),
+    #112f29;
+  color: #edf9f3;
+}
+
+.md-typeset .lab-hero h1 {
+  color: #fff;
+  font-size: clamp(1.8rem, 5vw, 3.3rem);
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+  margin: 0 0 0.7rem;
+}
+
+.md-typeset .lab-hero p {
+  max-width: 32rem;
+  margin: 0 0 1rem;
+  line-height: 1.85;
+}
+
+.md-typeset .lab-hero .lab-start {
+  padding: 0.48rem 0.85rem;
+  border: 1px solid #bcf8d9;
+  border-radius: 0.45rem;
+  background: #bcf8d9;
+  color: #112f29;
+}
+
+.md-typeset .lab-hero .lab-start:hover,
+.md-typeset .lab-hero .lab-start:focus-visible {
+  border-color: #fff;
+  background: #fff;
+  color: #112f29;
+}
+
+.md-typeset .lab-hero .lab-hero-note {
+  margin: 0;
+  color: #d3eadf;
+  font-size: 0.71rem;
+}
+
+.md-typeset .lab-lessons ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .lab-lessons ol > li {
+  margin: 0 0 0.45rem;
+}
+
+.lab-lessons a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--lab-border);
+  border-radius: 0.65rem;
+  color: var(--lab-ink);
+}
+
+.lab-lessons a:hover,
+.lab-lessons a:focus-visible {
+  border-color: #68a58c;
+  background: #f4faf7;
+}
+
+.lab-lesson-number {
+  padding: 0.18rem 0.4rem;
+  border-radius: 0.32rem;
+  background: #e9f4ee;
+  color: #225a48;
+  font: 0.68rem var(--md-code-font);
+}
+
+.lab-lessons strong,
+.lab-lessons small {
+  display: block;
+}
+
+.lab-lessons small {
+  color: var(--lab-muted);
+  font-size: 0.68rem;
+}
+
+.lab-lesson-arrow {
+  color: var(--md-accent-fg-color);
+}
+
+.lab-progress {
+  margin: 0 0 1.1rem;
+  color: var(--lab-muted);
+  font-size: 0.68rem;
+  font-weight: 650;
+}
+
+.lab-progress progress {
+  display: block;
+  width: 100%;
+  max-width: 13rem;
+  height: 0.35rem;
+  margin-top: 0.35rem;
+  accent-color: #146f57;
+}
+
+.md-typeset a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.md-typeset .lab-hero a:focus-visible {
+  outline-color: #fff;
+}
+
+@media (max-width: 30em) {
+  .md-typeset .highlight pre code {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+}
