@@ -2,7 +2,7 @@
 
 用 Copilot Studio 和動態 Dynamics 365 ERP MCP 建立一個唯讀客戶查詢代理。學員從 FO 測試環境選定客戶，在活動圖確認工具呼叫，回到 FO 核對客戶群組和幣別。
 
-從[工作坊總覽](docs/index.md)開始。適用環境包括符合版本需求的 FO UDE 與 Tier 2 以上沙箱。
+在 [GitHub Pages 開始實作](https://ks-jackwang.github.io/BuildAgentWith-D365FO-MCP/)，或直接閱讀[工作坊總覽原始檔](docs/index.md)。適用環境包括符合版本需求的 FO UDE 與 Tier 2 以上沙箱。
 
 ## 在本機預覽
 
